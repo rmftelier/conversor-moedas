@@ -38,7 +38,7 @@ public class ConversorMoeda {
 
              return dadosMoeda.conversionRates().get(moedaDestino);
          } catch (Exception e) {
-             System.out.println("Erro ao buscar a taxa de câmbio");
+             System.out.println("Erro ao buscar a taxa de câmbio.");
              throw new RuntimeException(e);
          }
     }
@@ -57,7 +57,7 @@ public class ConversorMoeda {
 
     public void historico(){
         if(historico.isEmpty()){
-            System.out.println("Nenhuma conversão realizada até o momento");
+            System.out.println("Nenhuma conversão realizada até o momento.");
         }else{
             System.out.println("========= Histórico de Conversões =========");
             historico.forEach(System.out::println);

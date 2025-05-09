@@ -34,7 +34,7 @@ public class ConversorController {
 
                   }
                   default -> {
-                      System.out.println("Opção inválida, por favor escolha novamente");
+                      System.out.println("Opção inválida, por favor escolha novamente.");
                       continue;
                   }
               }
@@ -48,7 +48,7 @@ public class ConversorController {
               conversorMoeda.registroConversao(moedaOrigem, moedaDestino, valor, resultado);
 
               System.out.printf(
-                      "Resultado: Valor %.2f [%s] corresponde ao valor de %.2f [%s] quando convertido\n",
+                      "Resultado: Valor %.2f [%s] corresponde ao valor de %.2f [%s] quando convertido.\n",
                       valor, moedaOrigem, resultado, moedaDestino);
           }
       }
