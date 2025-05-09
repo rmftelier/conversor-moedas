@@ -1,4 +1,9 @@
 package main.java.com.rmftelier.models;
 
-public record Moeda() {
-}
+import java.util.Map;
+
+public record Moeda(
+        String baseCode,
+        Map<String, Double> conversionRates
+      )
+      { }
